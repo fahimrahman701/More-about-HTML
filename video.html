@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Video</title>
+    <style>
+        audio {
+            width: 80%; /* Resize the audio bar */
+            background-color: #f0f0f0; /* Background color of the audio bar */
+            border: 2px solid #4CAF50; /* Border color */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+        }
+        h3 {
+            color: #4CAF50; /* Text color */
+            font-family: 'Arial', sans-serif; /* Font family */
+            font-size: 24px; /* Font size */
+            text-align: center; /* Center align text */
+            text-shadow: 2px 2px 4px #aaa; /* Text shadow */
+        }
+        .audio-section, .video-section, .youtube-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .audio-section img, .youtube-section img {
+            width: 50px; /* Resize the image */
+            height: auto;
+            margin-left: 10px;
+        }
+        .video-section img {
+            width: 40px; /* Resize the image */
+            height: auto;
+            margin-left: 10px;
+        }
+        .audio-section h3, .video-section h3, .youtube-section h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .video-section video{
+            width: 80%; /* Resize the video */
+            border: 2px solid #4CAF50; /* Border color */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+        }
+        .youtube-section iframe{
+            width: 80%; /* Resize the video */
+            height: 500px;
+            border: 2px solid #4CAF50; /* Border color */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+        }
+    </style>
+</head>
+<body>
+    <div class="audio-section">
+        <h3><span style="text-decoration: underline;">Audio section</span><img src="Assets/Images/download.jpg" alt="Audio Image"></h3>
+        <audio src="Assets/Audio/Aaj Se Teri - Full Audio _ Padman _ Akshay Kumar _ Radhika Apte _ Arijit Singh _ Amit Trivedi(MP3_320K).mp3" controls>Your browser does not support the audio element.</audio>
+    </div>
+
+    <div class="video-section">
+        <h3><span style="text-decoration: underline;">Video section</span><img src="Assets/Images/download.png" alt="Video Image"></h3>
+        <video src="Assets/Video/Facebook.mp4" controls></video>
+    </div>
+
+    <div class="youtube-section">
+        <h3><span style="text-decoration: underline;">YouTube section</span></h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/X_Aet9ndh_Y?si=2JXd5sIkG7nCryR1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
