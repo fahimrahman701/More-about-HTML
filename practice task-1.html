@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Task-1</title>
+    <style>
+        .custom-line {
+            border: none;          /*Removes the default border*/
+            height: 1px;           /*Sets the thickness */
+            background-color: #949191; /*Sets the color */
+            width: 100;            /*Sets the width */
+            margin: 10px auto;     /*Centers the line with margins*/
+        }
+
+        .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .text {
+            color: #525050;
+            margin-right: 10px;
+            font-size: 25px;
+        }
+
+        input {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #949191;
+        }
+
+        button {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #949191;
+            background-color: #949191;
+            color: white;
+            margin-left: 7px;
+        }
+        .kung-fu {
+            width: 50%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            margin-top: 20px;
+            margin-left: 350px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px #949191;
+        }
+        
+    </style>
+        
+</head>
+<body>
+    <header>
+        <!-- custom-line -->
+    <hr class="custom-line">
+
+        <!-- search bar here: -->
+        <span class="search">
+            <b class="text">Search Your Image Here:</b><input type="text" name="search" id="search">
+
+            <!-- search button here: -->
+        <button>search</button>
+        </span>
+    </header>
+    <main>
+        <!-- images -->
+        <img class="kung-fu" src="Images/epic-kung-fu-panda-doing-a-kick-ovob3u02frixxu7c.jpg" alt="">
+
+        <!-- link to the image: -->
+        <p><a href="https://wallpapers.com/images/high/epic-kung-fu-panda-doing-a-kick-ovob3u02frixxu7c.webp">For more information here</a></p>
+        <hr class="custom-line">
+
+        <!-- Feedback Form -->
+        <p><u>Feedback Form</u>:</p>
+        <P><u>Name</u>:</P>
+        <input type="text" name="name" id="name">
+        <p><u>Date</u>:</p>
+        <input type="date" name="date" id="date">
+        <p><u>Feedback</u>:</p>
+        <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea><br>
+
+        <!-- submit button -->
+        <button>Submit</button>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
